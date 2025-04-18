@@ -36,7 +36,7 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-'''
+```
 from django.shortcuts import render,HttpResponse
 from http.server import HTTPServer,BaseHTTPRequestHandler
 content="""
@@ -106,8 +106,7 @@ print("This is my webserver")
 serveraddress=('',8000)
 httpd = HTTPServer(serveraddress,Myserver)
 httpd.serve_forever()
-'''
-
+```
 ## OUTPUT:
 
 ![alt text](<Screenshot 2025-04-18 130405.png>)
